@@ -14,22 +14,23 @@ export default {
     extend: {
       colors: {
         homeo: {
-          skyBlue: '#33C3F0',
-          softBlue: '#E6F0FF',      // Updated softer blue
-          softPink: '#EAF4FF',      // More blue-aligned soft color
-          softPeach: '#F0F6FF',     // Lighter blue tone
-          softPurple: '#EAF2FE',    // Blue-leaning purple
-          softGreen: '#E6F3FA',     // Kept similar
-          softYellow: '#E6F1FF',    // Kept similar
-          primary: '#1E88E5',       // Material Design Blue (kept)
-          secondary: '#2196F3',     // Vibrant blue accent
-          tertiary: '#03A9F4',      // Light blue
-          dark: '#1A1F2C',          // Dark background
-          light: '#87CEEB'          // Sky Blue
+          skyBlue: '#1E90FF',     // Dodger Blue - bright, vibrant primary color
+          softBlue: '#E6F2FF',    // Very soft, light blue background
+          softPink: '#F0F6FF',    // Lighter blue, almost white-blue
+          softPeach: '#E1F5FE',   // Light blue with a hint of warmth
+          softPurple: '#E3F2FD',  // Soft, pale blue 
+          softGreen: '#E6F9FD',   // Blue-green soft tone
+          softYellow: '#E6F1FF',  // Pale blue with a hint of warmth
+          primary: '#0D47A1',     // Deep blue - more professional, authoritative
+          secondary: '#1565C0',   // Slightly lighter blue for contrast
+          tertiary: '#2196F3',    // Material design blue for accents
+          dark: '#0D47A1',        // Deep blue for dark elements
+          light: '#64B5F6'        // Lighter sky blue
         }
       },
       backgroundImage: {
-        'blue-gradient': 'linear-gradient(to right, #1E88E5, #2196F3)',
+        'blue-gradient': 'linear-gradient(to right, #0D47A1, #1565C0)',
+        'soft-blue-gradient': 'linear-gradient(to right, #E6F2FF, #F0F6FF)'
       }
     }
   },
