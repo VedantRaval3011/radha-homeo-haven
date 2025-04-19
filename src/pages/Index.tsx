@@ -16,8 +16,8 @@ const Index = () => {
     <Layout>
       <Hero />
       <WhyChooseUs />
-      <AboutHomeopathy />
       <FeaturedProducts />
+      <AboutHomeopathy />
       <FeaturedBlogs />
       <Testimonials />
       <WhyHomeopathy />

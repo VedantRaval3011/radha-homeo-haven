@@ -22,8 +22,8 @@ export function Layout({ children }: LayoutProps) {
         {/* Floating Action Buttons */}
         <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
           <a 
-            href="#bookings" 
-            className="p-3 rounded-full bg-gradient-to-r from-homeo-skyBlue to-homeo-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+            href="/bookings" 
+            className="p-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
             aria-label="Book a call"
           >
             <Phone className="h-6 w-6" />
