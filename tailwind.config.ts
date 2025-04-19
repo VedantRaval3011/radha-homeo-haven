@@ -14,23 +14,27 @@ export default {
     extend: {
       colors: {
         homeo: {
-          skyBlue: '#1E90FF',     // Dodger Blue - bright, vibrant primary color
-          softBlue: '#E6F2FF',    // Very soft, light blue background
-          softPink: '#F0F6FF',    // Lighter blue, almost white-blue
-          softPeach: '#E1F5FE',   // Light blue with a hint of warmth
-          softPurple: '#E3F2FD',  // Soft, pale blue 
-          softGreen: '#E6F9FD',   // Blue-green soft tone
-          softYellow: '#E6F1FF',  // Pale blue with a hint of warmth
-          primary: '#0D47A1',     // Deep blue - more professional, authoritative
-          secondary: '#1565C0',   // Slightly lighter blue for contrast
-          tertiary: '#2196F3',    // Material design blue for accents
-          dark: '#0D47A1',        // Deep blue for dark elements
-          light: '#64B5F6'        // Lighter sky blue
+          skyBlue: '#33C3F0',     // Bright sky blue
+          softBlue: '#E6F0FF',    // Soft blue
+          softPink: '#FFDEE2',    // Soft pink
+          softPeach: '#FDE1D3',   // Soft peach
+          softPurple: '#E5DEFF',  // Soft purple
+          softGreen: '#F2FCE2',   // Soft green
+          softYellow: '#FEF7CD',  // Soft yellow
+          primary: '#8B5CF6',     // Vivid purple
+          secondary: '#D946EF',   // Magenta pink
+          tertiary: '#F97316',    // Bright orange
+          dark: '#1A1F2C',        // Dark background
+          light: '#0EA5E9'        // Ocean blue
         }
       },
       backgroundImage: {
-        'blue-gradient': 'linear-gradient(to right, #0D47A1, #1565C0)',
-        'soft-blue-gradient': 'linear-gradient(to right, #E6F2FF, #F0F6FF)'
+        'purple-gradient': 'linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%)',
+        'yellow-gradient': 'linear-gradient(184.1deg, rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2%)',
+        'orange-gradient': 'linear-gradient(111.4deg, rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58%)',
+        'blue-gradient': 'linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%)',
+        'pink-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
+        'soft-gradient': 'linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%)'
       }
     }
   },
