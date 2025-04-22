@@ -8,28 +8,28 @@ const products = [
     name: "Arnica Montana 30C",
     price: 12.99,
     description: "For bruises, muscle soreness, and injuries",
-    image: "bg-blue-100"
+    image: "bg-homeo-softBlue"
   },
   {
     id: 2,
     name: "Allergy Relief Kit",
     price: 29.99,
     description: "Comprehensive homeopathic remedies for seasonal allergies",
-    image: "bg-blue-50"
+    image: "bg-homeo-softPurple"
   },
   {
     id: 3,
     name: "Digestive Support Drops",
     price: 18.50,
     description: "Natural remedy for digestive discomfort and bloating",
-    image: "bg-green-100"
+    image: "bg-homeo-softPeach"
   },
   {
     id: 4,
     name: "Stress & Anxiety Relief",
     price: 15.99,
     description: "Calm mind and reduce anxiety with this natural formula",
-    image: "bg-blue-200"
+    image: "bg-homeo-softYellow"
   }
 ];
 
@@ -72,13 +72,13 @@ export function FeaturedProducts() {
           <div className="flex space-x-2 animate-fade-in">
             <button 
               onClick={prevSlide}
-              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-blue-100 hover:border-blue-500 text-gray-700 dark:text-gray-300 transition-colors duration-300"
+              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-homeo-softBlue hover:border-homeo-primary text-gray-700 dark:text-gray-300 transition-colors duration-300"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
             <button 
               onClick={nextSlide}
-              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-blue-100 hover:border-blue-500 text-gray-700 dark:text-gray-300 transition-colors duration-300"
+              className="p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-homeo-softBlue hover:border-homeo-primary text-gray-700 dark:text-gray-300 transition-colors duration-300"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -92,22 +92,22 @@ export function FeaturedProducts() {
               className="homeo-card group animate-scale-in dark:bg-gray-800 dark:border dark:border-gray-700"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`${product.image} dark:bg-blue-900/20 h-48 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden`}>
+              <div className={`${product.image} dark:bg-homeo-dark/20 h-48 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden`}>
                 {/* Product image placeholder */}
                 <div className="text-5xl">💊</div>
                 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-blue-500/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                  <button className="p-3 bg-white rounded-full hover:bg-blue-100 transition-colors duration-300">
-                    <Eye className="h-5 w-5 text-blue-500" />
+                <div className="absolute inset-0 bg-homeo-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                  <button className="p-3 bg-white rounded-full hover:bg-homeo-softBlue transition-colors duration-300">
+                    <Eye className="h-5 w-5 text-homeo-primary" />
                   </button>
-                  <button className="p-3 bg-white rounded-full hover:bg-blue-100 transition-colors duration-300">
-                    <ShoppingCart className="h-5 w-5 text-blue-500" />
+                  <button className="p-3 bg-white rounded-full hover:bg-homeo-softBlue transition-colors duration-300">
+                    <ShoppingCart className="h-5 w-5 text-homeo-primary" />
                   </button>
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 dark:text-white transition-colors duration-300">
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-homeo-primary dark:text-white transition-colors duration-300">
                 {product.name}
               </h3>
               
@@ -116,15 +116,15 @@ export function FeaturedProducts() {
               </p>
               
               <div className="flex justify-between items-center">
-                <span className="text-blue-500 dark:text-blue-300 font-bold">
+                <span className="text-homeo-primary dark:text-homeo-light font-bold">
                   ${product.price.toFixed(2)}
                 </span>
                 
                 <div className="flex space-x-2">
-                  <button className="px-3 py-2 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-500 dark:text-blue-300 rounded-lg hover:bg-blue-500 hover:text-white dark:hover:bg-blue-700 transition-colors duration-300">
+                  <button className="px-3 py-2 text-sm bg-homeo-softBlue dark:bg-homeo-dark/30 text-homeo-primary dark:text-homeo-light rounded-lg hover:bg-homeo-primary hover:text-white dark:hover:bg-homeo-secondary transition-colors duration-300">
                     Add to Cart
                   </button>
-                  <button className="px-3 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                  <button className="px-3 py-2 text-sm bg-homeo-primary text-white rounded-lg hover:bg-homeo-secondary transition-colors duration-300">
                     Buy Now
                   </button>
                 </div>
