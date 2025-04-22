@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Index from "./pages/Index";
+import Products from "./pages/Products";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,9 +20,9 @@ const App = () => (
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/about" element={<NotFound />} />
             <Route path="/homeopathy" element={<NotFound />} />
-            <Route path="/products" element={<NotFound />} />
             <Route path="/bookings" element={<NotFound />} />
             <Route path="/blog" element={<NotFound />} />
             <Route path="/testimonials" element={<NotFound />} />

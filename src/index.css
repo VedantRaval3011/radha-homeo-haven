@@ -164,3 +164,9 @@
     }
   }
 }
+
+@layer utilities {
+  .clip-path-half {
+    clip-path: inset(0 50% 0 0);
+  }
+}
