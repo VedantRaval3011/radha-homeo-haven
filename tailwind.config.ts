@@ -58,7 +58,13 @@ export default {
           secondary: '#15803D',   // Dark green
           tertiary: '#4ADE80',    // Bright green
           dark: '#052e16',        // Dark forest green
-          light: '#86EFAC'        // Light mint green
+          light: '#86EFAC',       // Light mint green
+          darkBg: '#0F172A',      // Dark background
+          darkCard: '#1E293B',    // Dark card background
+          darkText: '#E2E8F0',    // Light text for dark mode
+          darkMuted: '#94A3B8',   // Muted text for dark mode
+          darkAccent: '#2DD4BF',  // Accent color for dark mode
+          darkBorder: '#334155'   // Border color for dark mode
         }
       },
       backgroundImage: {
@@ -67,7 +73,8 @@ export default {
         'orange-gradient': 'linear-gradient(111.4deg, #22C55E 1%, #A3E635 58%)',
         'blue-gradient': 'linear-gradient(90deg, #86EFAC 0%, #15803D 100%)',
         'pink-gradient': 'linear-gradient(90deg, #BBF7D0 0%, #16A34A 100%)',
-        'soft-gradient': 'linear-gradient(109.6deg, #DCFCE7 11.2%, #F0FDF4 91.1%)'
+        'soft-gradient': 'linear-gradient(109.6deg, #DCFCE7 11.2%, #F0FDF4 91.1%)',
+        'dark-gradient': 'linear-gradient(to right, #0F172A, #1E293B)'
       },
       borderRadius: {
         lg: "var(--radius)",

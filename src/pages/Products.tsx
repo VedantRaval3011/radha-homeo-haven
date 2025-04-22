@@ -15,7 +15,7 @@ const productData = [
     price: 8.99,
     rating: 4.8,
     reviews: 124,
-    image: "bg-homeo-softBlue",
+    image: "bg-homeo-softBlue dark:bg-homeo-dark/20",
     badges: ["Natural", "Organic", "Ayurvedic"],
     ingredients: ["Neem Oil", "Tulsi Extract", "Coconut Oil", "Shea Butter"],
     skinType: "Oily, Acne-Prone",
@@ -29,7 +29,7 @@ const productData = [
     price: 9.99,
     rating: 4.9,
     reviews: 87,
-    image: "bg-homeo-softPurple",
+    image: "bg-homeo-softPurple dark:bg-homeo-dark/20",
     badges: ["Calming", "Essential Oils", "Eco-friendly"],
     ingredients: ["Lavender Oil", "Chamomile Extract", "Glycerin", "Olive Oil"],
     skinType: "Sensitive, Dry",
@@ -43,7 +43,7 @@ const productData = [
     price: 7.99,
     rating: 4.6,
     reviews: 112,
-    image: "bg-homeo-softYellow",
+    image: "bg-homeo-softYellow dark:bg-homeo-dark/20",
     badges: ["Moisturizing", "Exfoliating", "Handmade"],
     ingredients: ["Raw Honey", "Colloidal Oatmeal", "Shea Butter", "Almond Oil"],
     skinType: "Dry, Sensitive",
@@ -57,7 +57,7 @@ const productData = [
     price: 10.99,
     rating: 4.7,
     reviews: 95,
-    image: "bg-homeo-softBlue",
+    image: "bg-homeo-softBlue dark:bg-homeo-dark/20",
     badges: ["Detoxifying", "Deep Cleansing", "Vegan"],
     ingredients: ["Activated Charcoal", "Tea Tree Oil", "Peppermint", "Coconut Oil"],
     skinType: "All Skin Types, Especially Oily",
@@ -71,7 +71,7 @@ const productData = [
     price: 8.49,
     rating: 4.5,
     reviews: 76,
-    image: "bg-homeo-softPeach",
+    image: "bg-homeo-softPeach dark:bg-homeo-dark/20",
     badges: ["Cooling", "Hydrating", "After-Sun"],
     ingredients: ["Aloe Vera Gel", "Cucumber Extract", "Vitamin E", "Glycerin"],
     skinType: "All Skin Types, Sunburned",
@@ -85,7 +85,7 @@ const productData = [
     price: 11.99,
     rating: 4.8,
     reviews: 58,
-    image: "bg-homeo-softPurple",
+    image: "bg-homeo-softPurple dark:bg-homeo-dark/20",
     badges: ["Brightening", "Ayurvedic", "Anti-Aging"],
     ingredients: ["Sandalwood Powder", "Turmeric", "Saffron", "Coconut Oil"],
     skinType: "Dull, Pigmented",
@@ -99,7 +99,7 @@ const productData = [
     price: 9.49,
     rating: 4.7,
     reviews: 67,
-    image: "bg-homeo-softYellow",
+    image: "bg-homeo-softYellow dark:bg-homeo-dark/20",
     badges: ["Balancing", "Floral", "Luxury"],
     ingredients: ["Rose Essential Oil", "Geranium Oil", "Rose Clay", "Shea Butter"],
     skinType: "Combination, Normal",
@@ -113,7 +113,7 @@ const productData = [
     price: 7.99,
     rating: 4.6,
     reviews: 84,
-    image: "bg-homeo-softBlue",
+    image: "bg-homeo-softBlue dark:bg-homeo-dark/20",
     badges: ["Energizing", "Morning Use", "Refreshing"],
     ingredients: ["Lemon Essential Oil", "Peppermint", "Lemongrass", "Apricot Seeds"],
     skinType: "All Skin Types",
@@ -128,9 +128,9 @@ export default function Products() {
 
   return (
     <Layout>
-      <div className="pl-0 md:pl-64 p-6 bg-homeo-softPurple dark:bg-homeo-dark">
+      <div className="pl-0 md:pl-64 p-6 bg-homeo-softPurple dark:bg-homeo-darkBg transition-colors duration-300">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold text-homeo-dark dark:text-white">Products</h1>
+          <h1 className="text-3xl font-bold text-homeo-dark dark:text-homeo-darkText">Products</h1>
           <div className="flex gap-4 items-center">
             <ProductSort currentSort={currentSort} onSortChange={setCurrentSort} />
             <ViewToggle currentView={currentView} onViewChange={setCurrentView} />
