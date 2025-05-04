@@ -1,4 +1,3 @@
-
 import { Layout } from "../components/Layout";
 import { Hero } from "../components/Hero";
 import { WhyChooseUs } from "../components/WhyChooseUs";
@@ -17,11 +16,7 @@ const Index = () => {
       <Hero />
       <WhyChooseUs />
       <FeaturedProducts />
-<<<<<<< HEAD
-      {/* <AboutHomeopathy /> */}
-=======
       <AboutHomeopathy />
->>>>>>> 74f40745f9e1c4fd949f7be555df137589f0e8bd
       <FeaturedBlogs />
       <Testimonials />
       {/* <WhyHomeopathy /> */}
