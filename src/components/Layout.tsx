@@ -11,7 +11,11 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <ThemeProvider>
+<<<<<<< HEAD
       <div className="min-h-screen bg-homeo-softPurple dark:bg-homeo-dark transition-colors duration-300">
+=======
+      <div className="min-h-screen bg-homeo-softPurple dark:bg-homeo-darkBg transition-colors duration-300">
+>>>>>>> 74f40745f9e1c4fd949f7be555df137589f0e8bd
         <ThemeToggle />
         <Sidebar />
         <main>

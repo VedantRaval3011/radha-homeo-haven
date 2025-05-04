@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import { AuthProvider } from "./contexts/AuthContext";
 import AdminRoute from "./components/AdminRoute";
 import Index from "./pages/Index";
+import Products from "./pages/Products";
 import NotFound from "./pages/NotFound";
 import ProductsPage from "./pages/Products";
 import ProductPage from "./components/products/ProductPage"; // Import ProductPage
@@ -22,6 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+<<<<<<< HEAD
         <AuthProvider>
           <AnimatePresence mode="wait">
             <Routes>
@@ -50,6 +52,21 @@ const App = () => (
             </Routes>
           </AnimatePresence>
         </AuthProvider>
+=======
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/about" element={<NotFound />} />
+            <Route path="/homeopathy" element={<NotFound />} />
+            <Route path="/bookings" element={<NotFound />} />
+            <Route path="/blog" element={<NotFound />} />
+            <Route path="/testimonials" element={<NotFound />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </AnimatePresence>
+>>>>>>> 74f40745f9e1c4fd949f7be555df137589f0e8bd
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

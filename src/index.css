@@ -7,83 +7,83 @@
 
 @layer base {
   :root {
-    --background: 240 33% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 142 76% 97%;
+    --foreground: 140 84% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 140 84% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 140 84% 5%;
 
-    --primary: 255 70% 75%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 260 30% 54%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 142 76% 30%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 142 20% 94%;
+    --muted-foreground: 142 10% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 40% 90%;
+    --accent-foreground: 142 76% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 142 20% 88%;
+    --input: 142 20% 88%;
+    --ring: 142 76% 36%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 260 33% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 255 70% 75%;
+    --sidebar-background: 142 40% 97%;
+    --sidebar-foreground: 142 30% 20%;
+    --sidebar-primary: 142 76% 36%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 260 30% 95%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 260 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 142 30% 90%;
+    --sidebar-accent-foreground: 142 30% 10%;
+    --sidebar-border: 142 20% 88%;
+    --sidebar-ring: 142 76% 36%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 30% 10%;
+    --foreground: 142 30% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 30% 15%;
+    --card-foreground: 142 30% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 30% 15%;
+    --popover-foreground: 142 30% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 142 50% 40%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 142 40% 30%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 30% 20%;
+    --muted-foreground: 142 10% 75%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 142 30% 25%;
+    --accent-foreground: 142 30% 95%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 142 30% 25%;
+    --input: 142 30% 25%;
+    --ring: 142 50% 40%;
 
-    --sidebar-background: 240 10% 3.9%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 217.2 91.2% 59.8%;
-    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
-    --sidebar-accent: 217.2 32.6% 17.5%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217.2 32.6% 17.5%;
-    --sidebar-ring: 224.3 76.3% 48%;
+    --sidebar-background: 220 30% 8%;
+    --sidebar-foreground: 142 30% 95%;
+    --sidebar-primary: 142 50% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 142 30% 25%;
+    --sidebar-accent-foreground: 142 30% 95%;
+    --sidebar-border: 142 30% 20%;
+    --sidebar-ring: 142 50% 40%;
   }
 }
 
@@ -108,11 +108,11 @@
 
 @layer components {
   .homeo-card {
-    @apply bg-white dark:bg-card rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6;
+    @apply bg-white dark:bg-homeo-darkCard rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-transparent dark:border-homeo-darkBorder;
   }
 
   .homeo-button {
-    @apply bg-homeo-primary text-white font-medium rounded-full px-6 py-3 hover:bg-homeo-secondary transition-all duration-300 shadow-md hover:shadow-lg;
+    @apply bg-homeo-primary text-white font-medium rounded-full px-6 py-3 hover:bg-homeo-secondary transition-all duration-300 shadow-md hover:shadow-lg dark:bg-homeo-primary dark:hover:bg-homeo-secondary dark:text-white;
   }
 
   .homeo-section {
@@ -120,19 +120,19 @@
   }
 
   .homeo-heading {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-homeo-dark dark:text-white mb-8;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-homeo-dark dark:text-homeo-darkText mb-8;
   }
 
   .homeo-subheading {
-    @apply text-xl md:text-2xl font-medium text-homeo-tertiary dark:text-homeo-light mb-6;
+    @apply text-xl md:text-2xl font-medium text-homeo-tertiary dark:text-homeo-primary mb-6;
   }
 
   .homeo-link {
-    @apply text-homeo-primary hover:text-homeo-secondary transition-colors duration-300;
+    @apply text-homeo-primary hover:text-homeo-secondary transition-colors duration-300 dark:text-homeo-tertiary dark:hover:text-homeo-primary;
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-homeo-skyBlue to-homeo-primary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-homeo-skyBlue to-homeo-primary bg-clip-text text-transparent dark:from-homeo-tertiary dark:to-homeo-primary;
   }
   
   .wavy-divider {
@@ -146,7 +146,7 @@
   }
   
   .dark .wavy-divider::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23111827'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%231E293B'/%3E%3C/svg%3E");
   }
   
   .floating-animation {
@@ -163,5 +163,11 @@
     100% {
       transform: translateY(0px);
     }
+  }
+}
+
+@layer utilities {
+  .clip-path-half {
+    clip-path: inset(0 50% 0 0);
   }
 }

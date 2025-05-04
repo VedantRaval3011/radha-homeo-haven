@@ -52,7 +52,11 @@ export function Sidebar() {
       </button>
 
       <div className={cn(
+<<<<<<< HEAD
         "fixed top-0 left-0 bottom-0 z-40 bg-white dark:bg-card border-r border-homeo-softBlue dark:border-gray-700 transition-all duration-300 ease-in-out",
+=======
+        "fixed top-0 left-0 bottom-0 z-40 bg-white dark:bg-gray-800 border-r border-homeo-softBlue dark:border-gray-700 transition-all duration-300 ease-in-out",
+>>>>>>> 74f40745f9e1c4fd949f7be555df137589f0e8bd
         "flex flex-col items-center overflow-hidden",
         isCollapsed ? "w-20" : "w-64",
         isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
