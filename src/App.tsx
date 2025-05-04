@@ -7,10 +7,9 @@ import { AnimatePresence } from "framer-motion";
 import { AuthProvider } from "./contexts/AuthContext";
 import AdminRoute from "./components/AdminRoute";
 import Index from "./pages/Index";
-import Products from "./pages/Products";
-import NotFound from "./pages/NotFound";
 import ProductsPage from "./pages/Products";
-import ProductPage from "./components/products/ProductPage"; // Import ProductPage
+import NotFound from "./pages/NotFound";
+import ProductPage from "./components/products/ProductPage";
 import Login from "./pages/Login";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ProductAdmin from "./pages/admin/ProductAdmin";
@@ -23,16 +22,15 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-<<<<<<< HEAD
         <AuthProvider>
           <AnimatePresence mode="wait">
             <Routes>
               {/* Public Routes */}
               <Route path="/" element={<Index />} />
+              <Route path="/products" element={<ProductsPage />} />
+              <Route path="/products/:productId" element={<ProductPage />} />
               <Route path="/about" element={<NotFound />} />
               <Route path="/homeopathy" element={<NotFound />} />
-              <Route path="/products" element={<ProductsPage />} />
-              <Route path="/products/:productId" element={<ProductPage />} /> {/* Add ProductPage route */}
               <Route path="/bookings" element={<NotFound />} />
               <Route path="/blog" element={<NotFound />} />
               <Route path="/testimonials" element={<NotFound />} />
@@ -42,9 +40,6 @@ const App = () => (
               <Route element={<AdminRoute />}>
                 <Route path="/admin/dashboard" element={<AdminDashboard />} />
                 <Route path="/admin/products" element={<ProductAdmin />} />
-                {/* <Route path="/admin/blog" element={<ProductAdmin />} /> */}
-                {/* <Route path="/admin/booking" element={<ProductAdmin />} /> */}
-                {/* Add more admin routes here */}
               </Route>
 
               {/* Catch-all route for undefined paths */}
@@ -52,21 +47,6 @@ const App = () => (
             </Routes>
           </AnimatePresence>
         </AuthProvider>
-=======
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/about" element={<NotFound />} />
-            <Route path="/homeopathy" element={<NotFound />} />
-            <Route path="/bookings" element={<NotFound />} />
-            <Route path="/blog" element={<NotFound />} />
-            <Route path="/testimonials" element={<NotFound />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </AnimatePresence>
->>>>>>> 74f40745f9e1c4fd949f7be555df137589f0e8bd
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
