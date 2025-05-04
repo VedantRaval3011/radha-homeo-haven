@@ -1,4 +1,3 @@
-
 import { ReactNode } from "react";
 import { Sidebar } from "./Sidebar";
 import { ThemeProvider } from "./ThemeProvider";
@@ -12,7 +11,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-background dark:bg-background transition-colors duration-300">
+      <div className="min-h-screen bg-homeo-softPurple dark:bg-homeo-dark transition-colors duration-300">
         <ThemeToggle />
         <Sidebar />
         <main>
@@ -22,8 +21,8 @@ export function Layout({ children }: LayoutProps) {
         {/* Floating Action Buttons */}
         <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
           <a 
-            href="#bookings" 
-            className="p-3 rounded-full bg-gradient-to-r from-homeo-skyBlue to-homeo-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+            href="/bookings" 
+            className="p-3 rounded-full bg-gradient-to-r from-homeo-primary to-homeo-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
             aria-label="Book a call"
           >
             <Phone className="h-6 w-6" />
@@ -32,7 +31,7 @@ export function Layout({ children }: LayoutProps) {
             href="https://wa.me/123456789" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gradient-to-r from-green-400 to-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+            className="p-3 rounded-full bg-gradient-to-r from-homeo-softGreen to-homeo-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
             aria-label="Chat on WhatsApp"
           >
             <MessageSquare className="h-6 w-6" />

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen pt-8 pl-0 md:pl-20 lg:pl-64 relative overflow-hidden">
+    <section id="home" className="min-h-screen pt-0 pl-0 md:pl-20 lg:pl-64 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-3/4 h-full bg-gradient-to-br from-homeo-softBlue to-homeo-softPurple dark:from-blue-900/20 dark:to-purple-900/20 opacity-20 rounded-bl-[200px] -z-10"></div>
 
@@ -147,7 +147,7 @@ export function Hero() {
           >
             <div className="absolute w-80 h-80 bg-gradient-to-br from-homeo-softPeach to-homeo-softPink dark:from-pink-900/30 dark:to-purple-900/30 rounded-full -z-10 transform translate-x-4 translate-y-4"></div>
             <motion.div 
-              className="w-80 h-96 bg-gradient-to-br from-homeo-softBlue via-homeo-softPurple to-homeo-softPink dark:from-blue-900/40 dark:via-purple-900/40 dark:to-pink-900/40 rounded-2xl overflow-hidden shadow-xl relative floating-animation"
+              className="w-80 h-96 bg-gradient-to-br from-homeo-softBlue via-homeo-softPurple to-homeo-softPink dark:from-green-700/40 dark:via-green-900/40 dark:to-green-900/40 rounded-2xl overflow-hidden shadow-xl relative floating-animation"
             >
               {/* Placeholder for Dr. Radha's image */}
               <div className="w-full h-full flex items-center justify-center">

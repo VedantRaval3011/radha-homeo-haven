@@ -41,14 +41,14 @@ export function AboutHomeopathy() {
                 <p className="mt-2 font-medium text-homeo-dark">Homeopathic Globules</p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden h-48 bg-homeo-softGreen flex items-center justify-center">
+            <div className="rounded-2xl overflow-hidden h-48 bg-homeo-softBlue flex items-center justify-center">
               {/* Placeholder for consultation image */}
               <div className="text-center p-4">
                 <span className="text-4xl">👩‍⚕️</span>
                 <p className="mt-2 font-medium text-homeo-dark">Consultations</p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden h-48 bg-homeo-softYellow flex items-center justify-center">
+            <div className="rounded-2xl overflow-hidden h-48 bg-homeo-softPink flex items-center justify-center">
               {/* Placeholder for medicine preparation image */}
               <div className="text-center p-4">
                 <span className="text-4xl">🧪</span>

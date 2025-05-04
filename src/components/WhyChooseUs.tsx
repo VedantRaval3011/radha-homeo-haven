@@ -20,14 +20,14 @@ const features = [
     icon: Baby,
     title: "Safe for all age groups including infants",
     description: "Our treatments are gentle and suitable for everyone from infants to the elderly, providing care at every stage of life.",
-    color: "bg-homeo-softPink dark:bg-pink-900/30",
+    color: "bg-homeo-softBlue dark:bg-pink-900/30",
     iconColor: "text-pink-500 dark:text-pink-400"
   },
   {
     icon: Leaf,
     title: "Natural & Side-Effect Free Treatments",
     description: "Homeopathic remedies are derived from natural sources and rarely cause any side effects, making them safe for long-term use.",
-    color: "bg-homeo-softGreen dark:bg-green-900/30",
+    color: "bg-homeo-softBlue dark:bg-green-900/30",
     iconColor: "text-green-500 dark:text-green-400"
   },
   {
@@ -41,7 +41,7 @@ const features = [
     icon: MessageSquare,
     title: "Personalized Attention & Long-Term Care",
     description: "Every patient receives individualized treatment plans based on their unique constitution and health concerns.",
-    color: "bg-homeo-softYellow dark:bg-yellow-900/30",
+    color: "bg-homeo-softBlue dark:bg-yellow-900/30",
     iconColor: "text-yellow-500 dark:text-yellow-400"
   }
 ];
@@ -64,7 +64,7 @@ export function WhyChooseUs() {
   };
 
   return (
-    <section id="why-choose-us" className="homeo-section pl-0 md:pl-20 lg:pl-64 relative wavy-divider">
+    <section id="why-choose-us" className="homeo-section pl-0 md:pl-20 lg:pl-64 relative ">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           className="text-center mb-16"
@@ -73,7 +73,7 @@ export function WhyChooseUs() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="gradient-text inline-block text-4xl md:text-5xl font-bold mb-4">Why Choose Us</h2>
+          <h2 className=" inline-block text-4xl md:text-5xl font-bold mb-4">Why Choose Us</h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
             At Dr. Radha's Homeopathy, we're committed to providing gentle, holistic
             care that addresses the root causes of your health concerns.
